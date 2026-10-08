@@ -1,0 +1,34 @@
+aid: liquilens
+name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs
+description: 'LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs is a company surfaced via
+  the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline
+  profiling.'
+url: https://raw.githubusercontent.com/api-evangelist/liquilens/refs/heads/main/apis.yml
+x-type: company
+x-source: harvest:new-submission
+x-tier: stub
+x-tier-reason: harvest
+specificationVersion: '0.20'
+created: '2026-10-08'
+modified: '2026-10-08'
+tags:
+- Company
+apis: []
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+- FN: APIs.json
+  email: info@apis.io
+common:
+- type: Website
+  url: https://liquilens.in/
+- type: Documentation
+  url: https://beepboop2025.github.io/financial-evidence-skills/api/
+x-submission-notes: Duplicate notice 3304 (same content, ledger id not found for it). Docs/OpenAPI live
+  on a personal github.io (beepboop2025), API on sibling product domain seiche.info (Seiche, Undertow
+  are their products). No apis.json/openapi on liquilens.in.
+x-submission-probe: liquilens.in 200 (GitHub Pages; soft-404 clean 404); OpenAPI 3.1 on github.io (14
+  paths, server api.seiche.info/openbb); api.seiche.info/openbb/healthz + /api/v1/sources 200 JSON, invented
+  path 404; MCP initialize OK at api.seiche.info/openbb/mcp ('Financial Evidence Workspace' 1.1.3) and
+  liquilens.in/mcp/financial-evidence ('financial-evidence' 0.1.7)
+x-submitted-by: mrinal@liquilens.in (apis.io/add, 2026-10-07T08:04:12.373Z)
