@@ -1,0 +1,133 @@
+openapi: 3.2.0
+info:
+  title: Financial Evidence for OpenBB Agent Query API
+  description: Seven source-cited datasets, Workspace widgets and read-only MCP. No API key required.
+  version: 1.1.3
+servers:
+- url: /openbb
+tags:
+- name: Agent Query
+paths:
+  /api/v1/agent-query:
+    get:
+      summary: Agent Query
+      description: Compact cited rows with a repeat-call revision, retaining source clocks and gaps.
+      operationId: agent_query_api_v1_agent_query_get
+      parameters:
+      - name: dataset
+        in: query
+        required: true
+        schema:
+          enum:
+          - money_markets
+          - money_market_history
+          - capital_markets
+          - bank_risk
+          - market_liquidity
+          - china_economy
+          - source_health
+          type: string
+          title: Dataset
+      - name: entity
+        in: query
+        required: false
+        schema:
+          type: string
+          maxLength: 100
+          default: ''
+          title: Entity
+      - name: start_date
+        in: query
+        required: false
+        schema:
+          type: string
+          default: ''
+          title: Start Date
+      - name: end_date
+        in: query
+        required: false
+        schema:
+          type: string
+          default: ''
+          title: End Date
+      - name: limit
+        in: query
+        required: false
+        schema:
+          type: integer
+          maximum: 100
+          minimum: 1
+          default: 25
+          title: Limit
+      - name: offset
+        in: query
+        required: false
+        schema:
+          type: integer
+          maximum: 100000
+          minimum: 0
+          default: 0
+          title: Offset
+      - name: previous_revision
+        in: query
+        required: false
+        schema:
+          type: string
+          maxLength: 64
+          pattern: ^(?:[0-9a-f]{64})?$
+          default: ''
+          title: Previous Revision
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties: true
+                title: Response Agent Query Api V1 Agent Query Get
+        '422':
+          description: Validation Error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/HTTPValidationError'
+      tags:
+      - Agent Query
+components:
+  schemas:
+    ValidationError:
+      properties:
+        loc:
+          items:
+            anyOf:
+            - type: string
+            - type: integer
+          type: array
+          title: Location
+        msg:
+          type: string
+          title: Message
+        type:
+          type: string
+          title: Error Type
+        input:
+          title: Input
+        ctx:
+          type: object
+          title: Context
+      type: object
+      required:
+      - loc
+      - msg
+      - type
+      title: ValidationError
+    HTTPValidationError:
+      properties:
+        detail:
+          items:
+            $ref: '#/components/schemas/ValidationError'
+          type: array
+          title: Detail
+      type: object
+      title: HTTPValidationError

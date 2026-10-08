@@ -1,0 +1,371 @@
+# LiquiLens
+
+## Company and connected products
+
+LiquiLens is a registered private limited company in India: LIQUILENS PRIVATE LIMITED, incorporated 5 August 2026 (CIN U62011RJ2026PTC116792). LiquiLens reviews institutions, Seiche adds funding conditions, and Undertow examines market liquidity and stated-size exits. International access does not imply uniform worldwide market coverage.
+
+- Company profile: https://liquilens.in/company-profile.json
+- Company and investors: https://liquilens.in/investors/
+- Connected review workflow: https://liquilens.in/start/
+
+Keep each product's source dates, limitations and authority separate. Use only the products relevant to the user's question.
+
+## Free agent starter kit
+
+- Connect Gemini CLI, Hermes, OpenClaw, Claude Code, Codex, Cursor or VS Code: https://liquilens.in/agents/
+- Text guide: https://liquilens.in/agents/README.md
+- Topic profiles for GIFT City, reference FX, gold scenarios, money markets, bank risk and BTC exits: https://liquilens.in/agents/profiles.json . Current Hermes/OpenClaw/Gemini CLI defaults select thirteen public tools; the original nine-tool selection remains a separate profile. Gold scenarios require explicit caller inputs and do not supply executable quotes.
+- Gemini CLI Streamable HTTP configuration: https://liquilens.in/agents/gemini.json
+- Tested client versions and installation commands: https://liquilens.in/agents/clients.md
+- Hermes setup and first research task: https://liquilens.in/agents/hermes/
+- OpenClaw setup and first research task: https://liquilens.in/agents/openclaw/
+- OpenClaw research skill on ClawHub: https://clawhub.ai/beepboop2025/skills/liquilens-trading-research
+- Reproducible Python kit and configurations: https://liquilens.in/agents/trading-research-kit.zip
+- Machine manifest and file checksums: https://liquilens.in/agents/manifest.json
+- Trading research skill: https://liquilens.in/agents/trading-research/SKILL.md
+- Hermes-compatible domain skill discovery: https://liquilens.in/.well-known/skills/index.json
+- Agent skill discovery draft v0.2 with integrity digest: https://liquilens.in/.well-known/agent-skills/index.json
+- n8n funding API workflow: https://liquilens.in/agents/n8n-funding-research.json
+- Live source coverage and seven-client connection recipes: https://liquilens.in/agents/#source-data
+- Funding histories, bank filings and Bitcoin/Liquid settlement MCP: https://api.seiche.info/api/v2/research-data/mcp
+- Source-data OpenAPI 3.1 contract: https://api.seiche.info/api/v2/research-data/openapi.json
+- Standard-library history client: https://liquilens.in/agents/source_data.py
+
+Public research is free with no account or API key; fair-use limits apply.
+The kit checks MCP connections, reads source-separated funding, optional bank
+evidence and BTC exit estimates, and compares the same request with a previous
+brief. No model dependency, background polling, automatic retries or execution.
+Keep source dates, unavailable sections and rights restrictions attached.
+The source-data connection exposes six read-only tools for catalog, series,
+entities, observations, tracked institutions and descriptive analysis. Historical
+observations keep native units, capture clocks and receipts. Paginate explicitly;
+an as-known-at filter cannot recover knowledge before the first archive capture.
+
+## Institutional agent workflow
+
+- Task guide: https://liquilens.in/developers/institutions/
+- OpenClaw native MCP configuration: https://liquilens.in/developers/institutions/openclaw.json
+- Hermes MCP configuration: https://liquilens.in/developers/institutions/hermes.yaml
+- Institution stress-review skill: https://liquilens.in/developers/institutions/liquilens-institution-review/SKILL.md
+- Python review plus Seiche context: https://liquilens.in/developers/recipes/institution_review.py (keep financial_research.py beside it).
+
+Use for a named institution's stress buildup, default-risk evidence and risk/compliance review questions. Discover coverage, resolve the exact entity and preserve jurisdiction, filing dates, source units, missingness and separately dated Seiche money-market context. A public review does not certify private-book compliance. These are custom connection recipes, not a claim of OpenClaw or Nous catalog approval or universal institution coverage.
+
+LiquiLens is a bank and lender early-warning system. It uses public filings, funding structure, regulatory thresholds, and market signals to identify signs of distress. Public outputs are risk screens, not credit ratings or predictions that an institution will fail.
+
+Canonical site: https://liquilens.in/
+World-economy evidence map: https://liquilens.in/world-economy/
+Schema.org dataset catalog: https://liquilens.in/world-economy/evidence-catalog.json
+Money-market evidence router: https://liquilens.in/money-markets/
+Capital-market evidence router: https://liquilens.in/capital-markets/
+China-economy evidence router: https://liquilens.in/china-economy/
+Financial Evidence Agent Skill: https://github.com/beepboop2025/financial-evidence-skills/tree/22096b824ac09d47cf24d7ab1612d9a97a13c7b3/financial-evidence
+Reviewed immutable source 22096b824ac09d47cf24d7ab1612d9a97a13c7b3; skill SHA-256 c2e9262fd2175c8181f59ef6b428fe91e3167ebc4fe24a33a1076c7243ed27ab. Topics: money-market, capital-market, china-economy, bank-risk, market-liquidity, gift-city, forex and gold. GIFT City and gold share one public GET receipt; forex uses a bounded reference context. No scenario runs automatically. Preserve source states, clocks, rights and gaps; transport success does not establish evidence eligibility or Carrier verification. This source pin makes no package, plugin or Registry release claim.
+Evidence Carrier protocol: https://liquilens.in/protocol/
+Evidence Carrier machine catalog: https://liquilens.in/protocol/catalog.json
+Trade Safety Receipt v1: https://liquilens.in/protocol/trade-safety/
+Free Trade Safety MCP and REST sandbox: https://trade-safety.liquilens.in/
+Trade Safety specification: https://liquilens.in/protocol/trade-safety/specification.md
+Trade Safety adoption plan: https://liquilens.in/protocol/trade-safety/adoption-plan.md
+Selection guide: https://liquilens.in/use-cases/
+Bank-risk reference guide: https://liquilens.in/guides/how-to-assess-bank-risk/ (asset quality, capital, funding, source clocks and a hypothetical ratio reconciliation; educational, not a credit rating)
+Free early-warning coverage check: https://liquilens.in/tools/ews-coverage-check/
+RBI/NBFC early-warning validation guide: https://liquilens.in/guides/rbi-nbfc-early-warning-system/
+Named-list software: https://liquilens.in/access/
+Paid proof pilot: https://liquilens.in/pilot/
+Optional enterprise Trade Safety protected-route pilot: https://liquilens.in/protocol/trade-safety/#protected-route-pilot
+Product card: https://liquilens.in/product-card.json
+Discovery catalog: https://liquilens.in/.well-known/ai-catalog.json
+RFC 9727 API catalog: https://liquilens.in/.well-known/api-catalog
+Reviewed investigations: https://liquilens.in/investigations/
+Current case file: https://liquilens.in/investigations/the-5-64x-private-credit-concentration/
+
+## World-economy evidence graph
+
+The public evidence network covers a bounded financial-pressure chain plus revision-safe China economy and information evidence; it is not a complete world-economy database. Route the claim before retrieving the data:
+
+- System funding: Seiche, https://seiche.info/, for US dollar funding, repo, reserves, Treasury cash, a granular USD money-market desk and a licence-aware global money-market atlas. Live coverage: https://api.seiche.info/api/v2/coverage
+- Institutions: LiquiLens, https://liquilens.in/research/, for covered banks, NBFCs, MFIs and lenders. Live evidence status: https://api.liquilens.in/api/evidence/markets
+- Market exits: Undertow, https://liquilens-undertow.com/, for provider concentration, market-depth evidence states and position-sized exit costs. Live public summary: https://api.seiche.info/undertow/x402/summary
+- China economy and information revisions: Palimpsest, https://palimpsest.info/china/, for bounded bitemporal observations, release and collection clocks, revision identities, provenance, coverage gates and abstentions. Financial authority: none. Observation manifest: https://palimpsest.info/readings/china-econ-observations-latest.json
+
+The machine catalog at https://liquilens.in/world-economy/evidence-catalog.json assigns each independent dataset a stable identifier, canonical landing page, machine-readable distributions, source lineage and evidence boundary. Cite each layer only for the claim it supports. An absent or unavailable input is not a calm signal, and a crawler or catalog entry does not guarantee an AI citation.
+
+Use https://liquilens.in/money-markets/ when the user intent starts with repo, reserves, rates or funding; https://liquilens.in/capital-markets/ when it starts with depth, concentration, counterparties or exit capacity; and https://liquilens.in/china-economy/ when it starts with China releases, revisions, information availability or financial transmission. These pages are routers, not additional evidence authorities.
+
+## Public evidence
+
+LiquiLens publishes three types of historical evidence and keeps their claims separate. The status tokens and eligibility flags below are served by https://api.liquilens.in/api/evidence/markets and are authoritative:
+
+- India: PERIOD_END_PROXY_CONSTRUCTION_PIT, a filing-availability-proxied construction-PIT diagnostic over 48 institutions. Validated-backtest eligible: false. Real-money eligible: false. The served headline reports 88.9 percent recall and 21.5-month median lead.
+- United States: CURRENT_AMENDED_CONSTRUCTION_PIT over all 552 FDIC failures since 2008. Validated-backtest eligible: false. Real-money eligible: false. The current diagnostic reports 72.8 percent recall, 21.7-month median lead, and pooled 24-month AUC 0.854; misses are named.
+- Europe: NAMED_CASE_FILES_CONSTRUCTION_PIT over seven sourced case files. Validated-backtest eligible: false. Real-money eligible: false. This is not a cohort-level performance estimate.
+
+Evidence index: https://liquilens.in/research/
+Failure replays: https://liquilens.in/replay/
+US validation: https://api.liquilens.in/api/us-radar/validation
+Failure Radar model card: https://api.liquilens.in/api/failure-radar/model-card
+Market evidence index: https://api.liquilens.in/api/evidence/markets
+
+## LiquiLens Lab reviewed status — 2026-08-09
+
+Status: VALIDATED_NOT_COMPLETE
+Status ID: sha256:2a726eeec94d364abfed05584951141c0f2481f4e219ea55184504a994eb6c86
+Machine-readable receipt: https://liquilens.in/research/lab-reviewed-status-2026-08-09.json
+Product-by-product replay atlas: https://liquilens.in/research/replay-atlas-2026-08-09.json
+
+One sealed ten-product replay pass contains 421,620 evaluations across 5,273 canonical events, producing 413,828 exactly bound gap rows and 51,870 root causes, alongside 82,556 robustness audit records. Named-event coverage is 32 of 47 national jurisdictions; 15 have no named event rows. The pass contains 4,191 verified event identities / 1,082 unresolved mappings. The baseline source ledger is 12 event-producing / 3 reviewed-no-event / 82 discovery-only, plus 1 supplemental event source. Three products have 4,146 genuine prospective forward score records; 0 of 7 requested products is eligible for retrospective backtesting. There are 14 robustness claim blockers. There were zero model changes.
+
+This status validates the sealed execution pass, not the incomplete research definition. It authorizes no performance-improvement claim, model promotion, or production execution.
+
+## Public products and boundaries
+
+- Failure Radar reports failure-probability screens, regulatory action-zone distance, funding fragility, and market-implied distance to default where eligible inputs are available.
+- Treat every market-distance value as API-dated evidence: `observation_at` (also served as `as_of` for compatibility) is the per-name observation date used by the freshness policy; `retrieved_at` is the separate capture clock; `liability_available_at` is the filing-availability clock used in the join—an explicit publication clock when present, otherwise the documented period-end-plus-60-day proxy; and `tier_authority` states whether all clock, admission, rights, and product gates permit the value to affect the tier. A daily-capable source is not proof that the served value refreshed today; absent fields leave freshness or authority unstated.
+- Dated gate correction, 2026-08-10: the conformal alarm remains diagnostic/display only, its historical tier wiring is suspended, and `tier_authority` is false pending prospective revalidation. The gate at that correction was `CLOSED_REVALIDATION_REQUIRED`; https://api.liquilens.in/api/evidence/gates is the current machine authority.
+- The MFI Risk Board reports disclosure-based readings for institutions with current vetted dossiers.
+- Exposure Watch joins an organization's recorded counterparties to the existing public screens. It does not create a new institution score.
+- Environment and market-context layers are displayed beside institution scores. They do not affect a score unless a pre-registered gate study passes.
+- Missing or stale coverage is reported explicitly rather than rendered as calm.
+
+One Bond Book field needs a precise reading. `tier1_negative_after_ugl_mark` is a boolean arithmetic flag showing that unrealized securities losses exceed Tier 1 capital on the bank's own filed figures. It is not a solvency finding and does not enter an institution score. Every flagged row carries `mark_qualifier`, and the payload defines the field in `mark_semantics`.
+
+Private deployments add customer-specific cash forecasting, liquidity-risk, treasury, and credit workflows. Private-book claims require validation inside the customer's controlled environment.
+
+The interactive demonstration at https://demo.liquilens.in requires sign-in and is available by request. It combines public evidence with synthetic operating data and should not be cited as a live customer book.
+
+## API and MCP access
+
+- Developer guide: https://liquilens.in/developers/
+- Runnable bank-review and funding-context recipes: https://liquilens.in/developers/#research-recipes
+- Python standard-library recipe: https://liquilens.in/developers/recipes/financial_research.py
+- Recipe manifest and fixed endpoints: https://liquilens.in/developers/recipes/manifest.json
+- Manual n8n bank-review workflow and validation limits: https://liquilens.in/developers/recipes/n8n-bank-review.md
+- REST catalog: https://api.liquilens.in/api
+- OpenAPI 3.1 document: https://api.liquilens.in/api/openapi.json
+- Hosted MCP: https://api.liquilens.in/mcp
+- Terminal CLI: https://github.com/beepboop2025/liquilens-cli
+- Agent Skill for bounded product selection: https://github.com/beepboop2025/financial-evidence-skills/tree/22096b824ac09d47cf24d7ab1612d9a97a13c7b3/financial-evidence
+
+The public MCP and public evidence endpoints require no token. MCP v1.8.1 exposes 24 read-only tools and 5 discoverable prompts: today's exact full-text editorial, the Failure Radar, institution details, historical-evidence records, RBI registry and enforcement data, transmission signals, display-only crypto context, and record verification.
+
+The hosted endpoint accepts the current MCP 2026-07-28 method-discovery contract and its declared legacy protocol versions. It publishes empty resource and resource-template catalogs explicitly rather than implying unavailable resources.
+
+## Portable Evidence Carrier
+
+LiquiLens Evidence Carrier v1 is the Apache-2.0 interchange contract used to preserve evidence identity across the product family. Its machine catalog is https://liquilens.in/protocol/catalog.json and its source repository is https://github.com/beepboop2025/liquilens-evidence-carrier. A carrier keeps event time, knowledge time, as-of time, source hashes, redistribution rights, product/version identity and an all-false execution, recommendation and credit-rating boundary. It can be projected into FDC3, CloudEvents, OpenTelemetry, OpenLineage, Arrow/Parquet metadata, flat rows, CSL-JSON and PROV-O without granting additional authority.
+
+Canonical schemas:
+
+- Full carrier: https://liquilens.in/protocol/liquilens-evidence-carrier-v1.schema.json
+- Policy-redacted reference: https://liquilens.in/protocol/liquilens-evidence-carrier-reference-v1.schema.json
+- Fleet Brief coordination envelope: https://liquilens.in/protocol/liquilens-fleet-brief-v1.schema.json
+- FDC3 context: https://liquilens.in/protocol/fdc3/com.liquilens.evidence.schema.json
+- OpenLineage facet: https://liquilens.in/protocol/openlineage/liquilens-evidence-facet.schema.json
+
+## Trade Safety Receipt v1
+
+Trade Safety Receipt v1 is an Apache-2.0, deterministic pre-trade control for AI trading agents, copilots and operator-owned order workflows. It binds one exact proposed order, accountable agent/operator/tenant/account identity, one operator-authored policy, request-bound product evidence and a short expiry to one of four outcomes: pass, limit, hold or unavailable. A pass means only that the exact request satisfied the exact policy at the receipt clock; it is not advice, approval, execution authorization or a promise of fill.
+
+Seiche and Undertow are required in every policy. Seiche supplies system funding and bounded regime context. Undertow supplies requested-size exit-cost and venue-friction context. LiquiLens is conditional for a covered institution, issuer, lender or counterparty relationship and is normally not_applicable or context_only until a separately reviewed evidence profile is eligible. Product states, rights and event/knowledge/as-of clocks remain separate; they are not flattened into a universal risk score.
+
+Canonical Trade Safety contracts:
+
+- Human landing page: https://liquilens.in/protocol/trade-safety/
+- Exact-order request: https://liquilens.in/protocol/liquilens-trade-safety-request-v1.schema.json
+- Operator policy: https://liquilens.in/protocol/liquilens-trade-safety-policy-v1.schema.json
+- Broker preview reference: https://liquilens.in/protocol/liquilens-broker-preview-reference-v1.schema.json
+- Order-bound receipt: https://liquilens.in/protocol/liquilens-trade-safety-receipt-v1.schema.json
+- FDC3 receipt context: https://liquilens.in/protocol/fdc3/com.liquilens.trade-safety-receipt.schema.json
+- FDC3 intent fragments: https://liquilens.in/protocol/fdc3/trade-safety-intents.json
+- Normative specification: https://liquilens.in/protocol/trade-safety/specification.md
+- Infrastructure and adoption plan: https://liquilens.in/protocol/trade-safety/adoption-plan.md
+
+The released Evidence Carrier 0.20.1 package and CLI can issue or verify local receipts; its Python package also exposes synchronous and asynchronous operator-side paper-order guards. Only a fresh, exact, HMAC-authenticated `pass` receipt can reach the protected paper callback. The offline read-only MCP server exposes receipt verification, not issuance. Live mode fails closed until durable broker idempotency and uncertain-outcome reconciliation exist. An adopter makes the receipt mandatory by withholding raw order tools and broker credentials from the agent, then verifying the receipt inside the caller-owned OMS or gateway before its own action.
+
+The public Trade Safety Gateway 0.2.2 is a free read-only sandbox at https://trade-safety.liquilens.in/. It requires no account, API key or payment. Its MCP endpoint exposes only `assess_trade_safety` and `trade_safety_capabilities`; the REST check and capability endpoints are public. Request, upstream and response byte/time limits are declared by the live capabilities endpoint, and the shared service makes no dedicated-capacity or uptime promise. x402 is disabled. The gateway has no broker credentials, preview endpoint, order-submission endpoint, routing, custody, settlement or execution authority, and cannot recommend or allocate capital. It runs exact source revision `747ea0ba50cea1d311d74e7ce0289aaa16af356a` from OCI image `ghcr.io/beepboop2025/liquilens-trade-safety-gateway@sha256:4b4b86c81dd57044145705bd42afd452560ec10015771ff1897311d483e7db11`. The Alpaca adapter in that source is a paper-only reference package; it is not installed in the public gateway, no broker credentials are present, and no paper or live orders are submitted.
+
+The site records only aggregate, property-free generic MCP-endpoint-copy and OpenAPI-open actions. Those are discovery signals, not proof of a gateway call or MCP activation. Gateway telemetry is enabled with optional pseudonymous installation identities, so no active-user, lead, customer, protected-order or revenue count may be inferred from site reach.
+
+Public Trade Safety Gateway endpoints:
+
+- MCP: https://trade-safety.liquilens.in/mcp
+- REST assessment: https://trade-safety.liquilens.in/v1/check
+- Capabilities and authority boundary: https://trade-safety.liquilens.in/v1/capabilities
+- OpenAPI: https://trade-safety.liquilens.in/openapi.json
+- Health: https://trade-safety.liquilens.in/healthz
+
+The optional enterprise Protected Route Pilot is a fixed-scope 30-day proof for teams that first evaluate the free public sandbox and then need one private, customer-owned paper-sandbox or OMS shadow route. A reviewed scope can add approved private evidence, higher quotas, replay and local audit export, team policy, a broker or OMS integration, and an agreed SLO and support boundary. The baseline binds one agent, one route, one account, one strategy family and one written operator policy; it includes order-path and bypass mapping, policy mapping, up to 25,000 assessment attempts with a hard cap and no automatic overage, four weekly calibration reviews, and a final evidence report. The route remains paper-only or non-executing throughout; the pilot does not provide investment advice, validate trading performance, enable x402, use live broker credentials or submit a live-money order. This is optional paid work, not a gate to the public MCP, REST, schemas, examples or conformance suite. There is no public list price. The written proposal names the fee and deployment boundary, and the pilot fee is creditable toward the first annual agreement if both sides proceed under those terms. Contact mrinal@liquilens.in with the accountable route owner, agent/runtime, paper broker or OMS shadow route, account and strategy family, existing control path, success threshold, customer-owned environment and target window. Do not send a broker secret or customer data in the first brief.
+
+Externally exercised Evidence Carrier consumer paths:
+
+- Official MCP Registry, LIVE at version 0.20.1: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.beepboop2025%2Fliquilens-evidence-carrier/versions/0.20.1
+- Fleet-Brief-aware LiquiLens Evidence Agent Skill, LIVE from the signed immutable tag: `npx --yes skills@1.5.23 add https://github.com/beepboop2025/liquilens-evidence-carrier/tree/skill-v0.15.0/skills/liquilens-evidence --skill liquilens-evidence --agent codex --copy --yes`. Anonymous discovery: `DO_NOT_TRACK=1 npx --yes skills@1.5.23 add beepboop2025/liquilens-evidence-carrier --list`. Directory page: https://skills.sh/beepboop2025/liquilens-evidence-carrier/liquilens-evidence (no ranking or install-count claim).
+- Codex Git marketplace plugin, LIVE from signed tag `plugin-v0.14.1`: `codex plugin marketplace add beepboop2025/liquilens-evidence-carrier --ref plugin-v0.14.1`, then `codex plugin add liquilens-evidence@liquilens`. A real public install enabled version 0.14.1; no MCP server is auto-started and no filesystem root is chosen for the user.
+- VS Code and Codespaces, LIVE as a public attested VSIX from a signed source tag: https://github.com/beepboop2025/liquilens-evidence-carrier/releases/download/vscode-v0.1.0/liquilens-evidence-0.1.0.vsix (16,612 bytes; SHA-256 `ebc17ca1aa54d3e6c93494bb19f82df2f6460f314c40074a4f6b41d94170d6cf`). The browser-entrypoint extension is offline and targets VS Code desktop, remote, web and Codespaces. Visual Studio Marketplace and Open VSX remain publisher-auth gated and are not live listings.
+- Zero-install browser verifier, LIVE with no analytics or document upload: https://beepboop2025.github.io/liquilens-evidence-carrier/
+- Exact-source browser module, LIVE with SHA-256 `76bcc3a8a0b4378e206fac769265eb631b765bbffbd290cbbfe7f86c72d6e16e`: https://cdn.jsdelivr.net/gh/beepboop2025/liquilens-evidence-carrier@68e5eead7ad7a78e3c379820a499cf3c7c34048b/browser/verifier.mjs
+- Hash-pinned one-shot CLI, LIVE: `uvx --no-cache --from 'https://github.com/beepboop2025/liquilens-evidence-carrier/releases/download/v0.20.1/liquilens_evidence-0.20.1-py3-none-any.whl#sha256=fcf11829842de317abf42be9cbfe19bdd138dad99e5ac60476f87048da1f9768' liquilens-evidence --help`
+- Homebrew, LIVE: `brew install beepboop2025/tap/liquilens-evidence`
+- Multi-architecture OCI image, LIVE at exact digest: `ghcr.io/beepboop2025/liquilens-evidence-carrier@sha256:bdbfed2afa87f25e8ef88dffeb4ba7ab198854705528c0de5abe31552a170b9a`
+- Dedicated MCP-default OCI image, LIVE at exact digest: `ghcr.io/beepboop2025/liquilens-evidence-carrier-mcp@sha256:d55f69e55e579603ae8b510de76b1191047427a92569424a17729ea7f7e3e2f7`. The anonymous multi-architecture index exposes provenance/SBOM attestations; the exact-digest no-network, read-only runtime passed initialization, tool discovery, carrier verification and root-escape rejection.
+- Dev Container Feature, LIVE at canonical OCI digest: `ghcr.io/beepboop2025/liquilens-devcontainer-features/liquilens-evidence@sha256:79ac17d7c3f91dc9360c6aa63cb9e4fa0081d5c81e1a1492b2198a8280f5b22d`. A no-login Dev Container CLI 0.88.0 consumer installed it as non-root and exercised CLI, MCP and boundary behavior. Its community-index PR is submitted, not listed: https://github.com/devcontainers/devcontainers.github.io/pull/729
+- Exact synthetic-only research notebook, LIVE and clean-room executed: https://github.com/beepboop2025/liquilens-evidence-carrier/blob/3d079421c830fcc97ea08da3c54b8429eb5ed542/notebooks/evidence_carrier_research.ipynb
+- MyBinder, LIVE after an anonymous exact-byte, five-cell kernel execution: https://mybinder.org/v2/gh/beepboop2025/liquilens-evidence-carrier/3d079421c830fcc97ea08da3c54b8429eb5ed542?urlpath=lab/tree/notebooks/evidence_carrier_research.ipynb
+- Google Colab, FETCHED AND RENDERED ONLY; hosted runtime execution is not claimed because the provider presented sign-in: https://colab.research.google.com/github/beepboop2025/liquilens-evidence-carrier/blob/3d079421c830fcc97ea08da3c54b8429eb5ed542/notebooks/evidence_carrier_research.ipynb
+- Exact-ref Nix CLI and MCP, LIVE across x86_64/aarch64 Linux and Darwin: `nix run github:beepboop2025/liquilens-evidence-carrier/3c97b71093f8bca201e74bb5cc7ddbe50d9fa052 -- --help`
+- OpenBB router extension, LIVE from an exact-main direct install: `python -m pip install 'git+https://github.com/beepboop2025/liquilens-evidence-carrier.git@05a77927496bf22c8bfdb7cbce2d6f43054911d0#subdirectory=integrations/openbb'`. It exposes `obb.liquilens.verify(data=...)` for already-supplied local JSON; it is not a market-data provider and does not widen source rights.
+- Apache Airflow provider, LIVE from a hash-pinned v0.1.0 wheel: `python -m pip install 'liquilens-airflow-provider @ https://github.com/beepboop2025/liquilens-airflow-provider/releases/download/v0.1.0/liquilens_airflow_provider-0.1.0-py3-none-any.whl#sha256=aa91a2528ebf2e1583c379a08ce60f9aa52fc33d9d89da0bab9876d5720956bf'`. A credential-free clean Airflow 3.3.1 consumer discovered the provider, migrated its database, serialized a DAG and ran the operator task and DAG to success. This is an independent third-party provider, not a PyPI or ASF catalog listing.
+- FDC3 Evidence Inspector, LIVE SELF-HOSTED REFERENCE CONSUMER: https://beepboop2025.github.io/financial-evidence-skills/integrations/fdc3/evidence-inspector/ . Its upstream App Directory PR is submitted, not listed.
+
+The canonical status, exact commands, immutable digests and public receipts are in https://liquilens.in/protocol/catalog.json. A repository artifact, submitted listing, fetched page or catalog record is not promoted to a live consumer path without a matching external receipt.
+
+The protocol and reference implementation are public under Apache-2.0. The license does not grant rights to third-party provider data placed inside a carrier. Restricted or unknown redistribution rights fail closed.
+
+The CLI v0.5.0 runs the India and US boards in a terminal, emits JSON or pipe-safe tables for automation, and caches the last good response for offline use. Run it without a persistent install with `npx liquilens`. Use `npx liquilens --record` for the three-market status ledger and `--record --json` to preserve the served evidence payload exactly.
+
+The first paid door is a named-list software seat at https://liquilens.in/access/: up to 25 public institution names on the live India Failure Radar or the served US FDIC board, a monthly generated pack, and flip alerts. Indian legal names or slugs and US legal names or FDIC certs are in scope. A European name that is not on those boards stays uncovered; Europe is seven named case files, not a monthly named-list book. No customer loan book is required. There is no list price on the public site. Write mrinal@liquilens.in. Private-book validation remains a six-week paid parallel pilot, scoped in the same reply, and is the last rung.
+
+The scoring boundary is fixed: generative features may explain served evidence, but the deterministic screening policy scores institutions. Historical-diagnostic eligibility is reported separately and never inferred from the presence of a score. A grounded answer that cannot verify its figures against served payloads is refused.
+
+## Telegram
+
+- Institution-risk bot: https://t.me/LiquiLens_bot
+- Funding-stress bot: https://t.me/seiche_desk_bot
+- Market-exit bot: https://t.me/undertow_LiquiLens_bot
+- Free reviewed daily channel: https://t.me/LiquidityLabDesk
+
+## Related products
+
+- Seiche 0.16.2 hosted MCP observation, checked 2026-10-08T11:12:54.886304+00:00: sixteen anonymous tools at https://api.seiche.info/mcp, including gift_city_context and gold_inventory_carry. Use market_workbench or world_markets_context for bounded reference forex; gold carry requires caller assumptions and is not an executable quote. Receipt: https://liquilens.in/protocol/discovery-observations/seiche/20261008T111254Z/observation.json. The native MCP endpoint is authoritative for the current inventory. This metadata-only observation does not establish source identity, data freshness, package or archive parity, recovery, recurrence, or full-release acceptance. The separately dated 0.13.13 observation and 0.13.2 signed bundle below retain their original scope.
+
+- Seiche 0.13.13, https://seiche.info/: observed hosted runtime source 0778835d7c80f53c4d7c8382b857457b3599dc58, checked 2026-10-01T09:03:39.362779+00:00. US dollar funding stress, a granular USD money-market desk, a licence-aware global atlas and bounded money/FX/macro-capital context. Hosted MCP: https://api.seiche.info/mcp. Discovery: https://api.seiche.info/.well-known/mcp.json. Package verified at that dated check: seiche==0.13.13; https://pypi.org/project/seiche/0.13.13/. Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.beepboop2025%2Fseiche/versions/0.13.13. PyPI, MCP Registry and public container ghcr.io/beepboop2025/seiche:0.13.13 were verified at the check time. Public 0.13.13 Zenodo archive https://doi.org/10.5281/zenodo.23076880 independently verified on 2026-10-01T07:09:43.050229+00:00: all 1,191 tracked files match the signed v0.13.13 source. These observations do not establish recovery or full-release acceptance. Inspect the live endpoints for current version, source clocks, coverage and limitations. This evidence context cannot authorize an order.
+
+- Seiche 0.13.2 historical signed acceptance bundle: fourteen anonymous read-only tools, four prompts and zero resources were recorded. Historical package: https://pypi.org/project/seiche/0.13.2/. Historical Registry: https://registry.modelcontextprotocol.io/v0.1/servers/io.github.beepboop2025%2Fseiche/versions/0.13.2. Application, website, packages and archive https://doi.org/10.5281/zenodo.22732023 were verified for 0.13.2; all 1,126 archive files match signed source 1deccedc16dc832f6c0bdef61a0426e4b9b2d9eb. Recovery and volume resize for 0.13.2 were owner-deferred. The signed 0.13.1 recovery receipt remains historical evidence for its original application. Historical application-and-distribution acceptance: https://liquilens.in/protocol/release-evidence/seiche/1deccedc16dc832f6c0bdef61a0426e4b9b2d9eb/application-distribution-acceptance.json. The bundle records unavailable China data with zero accepted series and an incomplete pre-March-2016 EFFR method-label correction. Its hashes, DOI and acceptance flags do not establish archive or recovery acceptance for the separately observed 0.13.13 runtime.
+- Seiche Market Atlas Corpus 1.0.0: https://api.seiche.info/api/v2/corpus/mcp exposes nine public read-only tools for dataset catalogs, structural inspection, bounded rights-approved BIS records, canonical market discovery and corpus health. Source clocks, immutable object identity and restricted metadata-only states remain explicit. Discover the current native contract at https://api.seiche.info/.well-known/mcp.json.
+- Undertow 1.13.0, https://liquilens-undertow.com/: market-liquidity tiers, depth concentration, estimated exit cost by venue and position size, request-bound Trade Safety exit context, and connected Palimpsest/Seiche research through research_network. Its hosted MCP at https://api.seiche.info/undertow/mcp exposes exactly sixteen anonymous public read-only tools, three visible prompts and zero resources; eight additional tools require a subscriber token. market_corpus_context returns canonical shared-corpus coverage, source identity, rights and separate source/retrieval clocks; https://liquilens-undertow.com/corpus/ presents the same projection. gold_cash_realisation is a caller-input scenario, not a quote or execution authorization.
+- My Quant Doesn't Speak English, https://myquantdoesntspeakenglish.com/: every Seiche, LiquiLens, and Undertow dispatch in one editorial wire, plus original investigations.
+- Groundcheck, https://groundcheck.seiche.info/: live-source claim and citation verification.
+
+## Public-good house (grants, not invoices)
+
+Palimpsest, Evidence Signal, and NarcoScope are free public goods. They observe and seal. They do not size financial risk and they are not named-list software.
+
+- Funding page: https://palimpsest.info/fund.html
+- Evidence Signal: https://t.me/EvidenceSignalDesk
+- Palimpsest 1.9.3: https://palimpsest.info/ — seven anonymous public read-only MCP tools, four visible prompts and one metadata-only publication-rights resource at https://api.seiche.info/palimpsest/mcp. research_catalog pages the complete source registry and supplies a separate Seiche research handoff. A signed native host receipt binds the deployed source and runtime module; the original six-tool deployment receipts and unchanged official MCP Registry 1.9.3 manifest remain historical evidence. Initialize the remote and inspect tools/list for current version and inventory: https://palimpsest.info/.well-known/ai-catalog.json. The public data download catalog is https://www.palimpsest.info/readings/public-data-catalog-latest.json; freshness and download availability are stated per dataset. Rights-denied economic evidence stays explicitly unavailable and cannot become a zero, neutral, healthy or directional result.
+- NarcoScope: https://narcoscope.com/
+
+## Citation
+
+Cite the specific validation page or API response and include its as-of or generated-at date. Suggested project citation:
+
+LiquiLens. Bank and lender failure early-warning research system. https://liquilens.in/ (accessed YYYY-MM-DD).
+
+<!-- DAILY-ARTICLES:START -->
+## Daily institution-risk articles
+
+Archive and full-text feeds: https://liquilens.in/articles/, https://liquilens.in/articles/feed.json (JSON Feed 1.1), and https://liquilens.in/articles/feed.xml (Atom)
+
+- [New India Co-operative Bank’s earliest disclosed warning was asset quality, not a market call](https://liquilens.in/articles/2026-10-08-new-india-co-operative-bank-s-earliest-disclosed-warning-was-asset-quality-n.md): 2026-10-08, historical replay. The replay places an NNPA action-zone breach well before the recorded event. That is a filing-period signal, not proof of a tradable market warning or a forensic explanation of a fraud-masked failure.
+- [Nedungadi Bank’s capital breach was an early warning, not a timetable](https://liquilens.in/articles/2026-10-07-nedungadi-bank-s-capital-breach-was-an-early-warning-not-a-timetable.md): 2026-10-07, historical replay. The replay identifies a CRAR action-zone breach well before Nedungadi Bank’s default. It supports a narrow historical finding about a filing-period capital signal, while leaving funding, market pricing and causation unresolved.
+- [Rupee Co-operative Bank: the warning was a blank record, not an early signal](https://liquilens.in/articles/2026-10-06-rupee-co-operative-bank-the-warning-was-a-blank-record-not-an-early-signal.md): 2026-10-06, historical replay. The replay cannot establish that Rupee Co-operative Bank’s balance sheet felt stress first. It establishes a stricter lesson: when liability disclosures and vetted inputs are absent, an institution is outside the lens—not safely inside it.
+- [CKP Co-operative Bank replay: when a missing warning is not an all-clear](https://liquilens.in/articles/2026-10-05-ckp-co-operative-bank-replay-when-a-missing-warning-is-not-an-all-clear.md): 2026-10-05, historical replay. CKP Co-operative Bank’s historical file does not establish a clean advance balance-sheet alarm before default. It instead shows why an unscoreable institution must remain an observability problem, not be recast as a calm one.
+- [IL&FS showed why a funding warning can arrive before a balance sheet looks broken](https://liquilens.in/articles/2026-10-04-il-fs-showed-why-a-funding-warning-can-arrive-before-a-balance-sheet-looks-b.md): 2026-10-04, historical replay. The historical replay puts IL&FS’s first disclosed funding watch before its default. That is a filing-period signal, not a market-price call or a validated prediction—and fraud masking sharply limits what the replay can prove.
+- [Religare Finvest’s funding watch was early—but fraud masking limits what the replay can prove](https://liquilens.in/articles/2026-10-03-religare-finvest-s-funding-watch-was-early-but-fraud-masking-limits-what-the.md): 2026-10-03, historical replay. The historical replay records a liability-side watch before Religare Finvest’s default. It also shows why a filing-period signal is neither a market-price signal nor proof that a disclosure-based model can see concealed facts.
+- [Global Trust Bank’s earliest disclosed warning was a balance-sheet breach, not a market signal](https://liquilens.in/articles/2026-10-02-global-trust-bank-s-earliest-disclosed-warning-was-a-balance-sheet-breach-no.md): 2026-10-02, historical replay. The replay finds a PCA action-zone entry before Global Trust Bank’s default, led by CRAR and NNPA breaches. But fraud masking, proxy timing, and missing funding data make this a triage lesson—not a validated forecast.
+- [Altico’s funding warning arrived before the event—but the replay is a diagnostic, not a forecast](https://liquilens.in/articles/2026-10-01-altico-s-funding-warning-arrived-before-the-event-but-the-replay-is-a-diagno.md): 2026-10-01, historical replay. Altico’s disclosed commercial-paper reliance appeared well before its default. The chronology supports a funding-risk hypothesis, but the construction-PIT record cannot validate a real-time forecast.
+- [Abhyudaya’s replay: an asset-quality breach arrived before the recorded event](https://liquilens.in/articles/2026-09-30-abhyudaya-s-replay-an-asset-quality-breach-arrived-before-the-recorded-event.md): 2026-09-30, historical replay. Abhyudaya Co-operative Bank entered an RBI action zone on disclosed NNPA before its recorded default date. The replay is a filing-period signal, not a market-price call or a live forecast—and its proxy clocks materially limit the claim.
+- [United Western Bank’s first disclosed fault line was asset quality, not funding](https://liquilens.in/articles/2026-09-29-united-western-bank-s-first-disclosed-fault-line-was-asset-quality-not-fundi.md): 2026-09-29, historical replay. The replay places an NNPA action-zone breach before United Western Bank’s recorded default, while the scoreable funding lens produced no first signal. That sequence is informative, but its timing is a construction-PIT availability proxy, not a tradable forecast.
+- [Sambandh Finserve’s funding signal arrived early—but could not see through fraud](https://liquilens.in/articles/2026-09-28-sambandh-finserve-s-funding-signal-arrived-early-but-could-not-see-through-f.md): 2026-09-28, historical replay. The historical replay identifies wholesale leverage as Sambandh Finserve’s first disclosed funding warning. It is a liability-side clue, not a market verdict, a causal proof, or a validated prediction of default.
+- [New India Co-operative Bank showed a disclosed stress breach before the event — and the fraud boundary is the point](https://liquilens.in/articles/2026-09-27-new-india-co-operative-bank-showed-a-disclosed-stress-breach-before-the-even.md): 2026-09-27, historical replay. A historical replay finds an NNPA action-zone breach at the FY2021 period end, ahead of the later default date. It supports investigation of disclosed balance-sheet pressure, not confidence that a threshold screen can see through false accounts.
+- [Nedungadi Bank’s capital breach was the first observable link in a long pressure chain](https://liquilens.in/articles/2026-09-26-nedungadi-bank-s-capital-breach-was-the-first-observable-link-in-a-long-pres.md): 2026-09-26, historical replay. A historical replay places Nedungadi Bank in an RBI action zone on its FY1999 CRAR disclosure before default. It is a filing-period signal under a proxy clock, not a market-price warning or a calibrated forecast.
+- [First Leasing replay: when a public balance-sheet radar cannot see through the record](https://liquilens.in/articles/2026-09-25-first-leasing-replay-when-a-public-balance-sheet-radar-cannot-see-through-th.md): 2026-09-25, historical replay. First Leasing Company Of India’s fraud-masked default is not an early-warning success. It is a boundary case showing why a filing-period signal, a market-price signal and a model derivation must not be treated as the same evidence.
+- [Rupee Co-operative Bank replay shows where a balance-sheet warning ends](https://liquilens.in/articles/2026-09-24-rupee-co-operative-bank-replay-shows-where-a-balance-sheet-warning-ends.md): 2026-09-24, historical replay. The record supports a disciplined distinction: a filing-period screen can organize disclosed pressure, but it cannot turn unavailable data, an unapproved market layer, or a modelled diagnostic into proof of the path to failure.
+- [IL&FS replay: funding signalled early, but disclosure limits defeat any clean verdict](https://liquilens.in/articles/2026-09-23-il-fs-replay-funding-signalled-early-but-disclosure-limits-defeat-any-clean.md): 2026-09-23, historical replay. The IL&FS record supports a narrow proposition: a disclosed funding signal can precede default, while fraud masking and proxy timing prevent that signal from becoming proof.
+- [Religare Finvest’s funding warning came first—but the replay cannot forecast](https://liquilens.in/articles/2026-09-22-religare-finvest-s-funding-warning-came-first-but-the-replay-cannot-forecast.md): 2026-09-22, historical replay. A disclosed-liability signal appeared before Religare Finvest’s default date under a conservative availability proxy. The result is a fraud-masked historical sequence, not causal proof, a market verdict, or a tradable forecast.
+- [Global Trust Bank’s replay: an early threshold warning, and the disclosure problem it could not solve](https://liquilens.in/articles/2026-09-21-global-trust-bank-s-replay-an-early-threshold-warning-and-the-disclosure-pro.md): 2026-09-21, historical replay. The recorded capital and asset-quality breaches arrived before Global Trust Bank’s default. But this fraud-masked case is stronger as a lesson in the limits of filing-based surveillance than as a claim that a model called the event.
+- [Altico’s historical warning was funding dependence, not a forecast of failure](https://liquilens.in/articles/2026-09-20-altico-s-historical-warning-was-funding-dependence-not-a-forecast-of-failure.md): 2026-09-20, historical replay. A construction-period replay identifies commercial-paper reliance as Altico’s earliest documented vulnerability. That is a filing-period signal about rollover exposure, not proof that markets priced distress or that a model forecast default.
+- [Before the event: what Abhyudaya Co-operative Bank's filings did and did not reveal](https://liquilens.in/articles/2026-09-19-before-the-event-what-abhyudaya-co-operative-bank-s-filings-did-and-did-not.md): 2026-09-19, historical replay. A construction-PIT replay of Abhyudaya Co-operative Bank: the first published regulatory or funding signal, the disclosure clock, the miss, and the boundary that survives into today's screen.
+- [Before the event: what United Western Bank's filings did and did not reveal](https://liquilens.in/articles/2026-09-18-before-the-event-what-united-western-bank-s-filings-did-and-did-not-reveal.md): 2026-09-18, historical replay. A construction-PIT replay of United Western Bank: the first published regulatory or funding signal, the disclosure clock, the miss, and the boundary that survives into today's screen.
+- [Sambandh Finserve’s early stress signal was funding, not a forecast](https://liquilens.in/articles/2026-09-17-sambandh-finserve-s-early-stress-signal-was-funding-not-a-forecast.md): 2026-09-17, historical replay. A historical replay places a fragile wholesale-liability signal before Sambandh Finserve’s default. The lesson is a balance-sheet mechanism to investigate, not a validated prediction or a market verdict.
+- [New India Co-operative Bank: a disclosed NNPA warning preceded the event, but fraud limits the replay](https://liquilens.in/articles/2026-09-16-new-india-co-operative-bank-a-disclosed-nnpa-warning-preceded-the-event-but.md): 2026-09-16, historical replay. The reconstructed record places an NNPA action-zone breach before New India Co-operative Bank’s recorded event. That is a filing-period observation, not market-price confirmation or a model-derived failure forecast, and fraud masking limits what the case can establish.
+- [Nedungadi Bank’s capital breach was the first visible warning in the disclosed record](https://liquilens.in/articles/2026-09-15-nedungadi-bank-s-capital-breach-was-the-first-visible-warning-in-the-disclos.md): 2026-09-15, historical replay. A historical replay places Nedungadi Bank’s first RBI capital action-zone breach before default. That is a bounded filing-period signal, not a market-price signal, a live forecast, or proof that capital caused the failure.
+- [First Leasing replay draws the line between disclosed stress and forensic risk](https://liquilens.in/articles/2026-09-14-first-leasing-replay-draws-the-line-between-disclosed-stress-and-forensic-ri.md): 2026-09-14, historical replay. First Leasing Company Of India’s fraud-masked default produced no recorded first action-zone or funding signal in this construction replay. That is a limit on reported-balance-sheet surveillance, not evidence of calm.
+- [Madhavpura’s replay shows where a balance-sheet radar can go blind](https://liquilens.in/articles/2026-09-13-madhavpura-s-replay-shows-where-a-balance-sheet-radar-can-go-blind.md): 2026-09-13, historical replay. Madhavpura Mercantile Co-operative Bank produced no recorded conventional early funding or action-zone warning. Fraud masking means that silence cannot be treated as resilience: a disclosure-driven screen cannot verify a balance sheet when reported evidence may be false.
+- [IL&FS replay: a funding watch arrived first, but the record cannot certify a forecast](https://liquilens.in/articles/2026-09-12-il-fs-replay-a-funding-watch-arrived-first-but-the-record-cannot-certify-a-f.md): 2026-09-12, historical replay. The IL&FS reconstruction places a funding watch before the recorded default while finding no first PCA action-zone entry. That is a filing-period signal under an optimistic availability proxy—not a market confirmation, a causal account, or a validated prediction.
+- [Religare Finvest’s earliest visible strain was funding — but fraud masks the balance-sheet story](https://liquilens.in/articles/2026-09-11-religare-finvest-s-earliest-visible-strain-was-funding-but-fraud-masks-the-b.md): 2026-09-11, historical replay. The historical replay records a watch-band funding signal before Religare Finvest’s default. That makes disclosed liabilities an early pressure channel to investigate, not a causal explanation or a forecast.
+- [Global Trust Bank’s first disclosed warning was capital and asset quality, not funding](https://liquilens.in/articles/2026-09-10-global-trust-bank-s-first-disclosed-warning-was-capital-and-asset-quality-no.md): 2026-09-10, historical replay. The historical replay places Global Trust Bank’s first recorded action-zone breach in FY2002, before its default. But falsified filings, unscoreable funding data and optimistic construction-PIT timing mean this is an investigative signal, not a validated forecast.
+- [Altico’s replay: a stable funding band can still contain a refinancing warning](https://liquilens.in/articles/2026-09-08-altico-s-replay-a-stable-funding-band-can-still-contain-a-refinancing-warnin.md): 2026-09-08, historical replay. Altico’s disclosed commercial-paper reliance was a filing-period signal of rollover-freeze exposure well before default. It is a useful historical clue, but the construction-PIT record cannot establish a validated predictive advantage.
+- [Abhyudaya’s earliest replay signal was asset quality, not funding](https://liquilens.in/articles/2026-09-07-abhyudaya-s-earliest-replay-signal-was-asset-quality-not-funding.md): 2026-09-07, historical replay. The historical record places an NNPA action-zone breach ahead of any recorded funding signal at Abhyudaya Co-operative Bank. That ordering warrants scrutiny, not a claim that a screen foresaw or caused the eventual event.
+- [United Western Bank’s first recorded warning was on the balance sheet, not in funding](https://liquilens.in/articles/2026-09-06-united-western-bank-s-first-recorded-warning-was-on-the-balance-sheet-not-in.md): 2026-09-06, historical replay. The historical replay places an NNPA action-zone breach before default, while the available funding lens records no first signal. That ordering is meaningful, but it is a construction-PIT diagnostic rather than a prediction rule.
+- [Sambandh Finserve’s disclosed funding flag was the earliest visible pressure point](https://liquilens.in/articles/2026-09-05-sambandh-finserve-s-disclosed-funding-flag-was-the-earliest-visible-pressure.md): 2026-09-05, historical replay. This historical replay identifies wholesale leverage as the first disclosed funding signal before Sambandh Finserve’s recorded default. It is not a market-price call, a causal finding, or evidence that a threshold model could see through fraud-masked filings.
+- [New India Co-operative Bank showed a disclosed stress signal first — but the replay cannot explain the whole event](https://liquilens.in/articles/2026-09-04-new-india-co-operative-bank-showed-a-disclosed-stress-signal-first-but-the-r.md): 2026-09-04, historical replay. The record places an NNPA action-zone breach before the later event. That is a filing-period warning, not a market-price confirmation or a model-derived failure forecast — and the fraud-masked designation sharply limits what the screen could know.
+- [Nedungadi Bank’s first recorded pressure point was capital, not a market call](https://liquilens.in/articles/2026-09-03-nedungadi-bank-s-first-recorded-pressure-point-was-capital-not-a-market-call.md): 2026-09-03, historical replay. The historical replay identifies a CRAR action-zone breach before Nedungadi Bank’s default, but its timing is a filing-availability proxy and its evidence cannot support a forecast, a credit verdict, or a claim of causation.
+- [Utkarsh Small Finance Bank’s first visible pressure point is asset quality, not a confirmed funding event](https://liquilens.in/articles/2026-09-02-utkarsh-small-finance-bank-s-first-visible-pressure-point-is-asset-quality-n.md): 2026-09-02, current analysis. Utkarsh Small Finance Bank is the sole orange institution in the current monitored set, but the designation rests on an aged filing-period signal: GNPA of 9.4%. Market confirmation is unavailable for publication, and key funding lenses are dark.
+- [Rupee Co-operative Bank replay: the signal was an evidence boundary, not a clean warning](https://liquilens.in/articles/2026-09-01-rupee-co-operative-bank-replay-the-signal-was-an-evidence-boundary-not-a-cle.md): 2026-09-01, historical replay. This is a historical replay, not current news and not a forecast. Rupee Co-operative Bank’s record shows why a balance-sheet screen must separate a filing-period signal, a market-price signal, and an absence of scoreable evidence.
+- [Before the event: what Sri Guru Raghavendra Sahakara Bank's filings did and did not reveal](https://liquilens.in/articles/2026-08-31-before-the-event-what-sri-guru-raghavendra-sahakara-bank-s-filings-did-and-d.md): 2026-08-31, historical replay. A construction-PIT replay of Sri Guru Raghavendra Sahakara Bank: the first published regulatory or funding signal, the disclosure clock, the miss, and the boundary that survives into today's screen.
+- [Religare Finvest’s funding signal was early—not a clean prediction of failure](https://liquilens.in/articles/2026-08-30-religare-finvest-s-funding-signal-was-early-not-a-clean-prediction-of-failur.md): 2026-08-30, historical replay. A historical replay places a Watch-band funding reading before Religare Finvest’s default. The narrower lesson is that liability strain can reveal vulnerability before formal thresholds do, while fraud can make disclosure-based screens falsely reassuring.
+- [IL&FS replay: the funding signal arrived before the threshold lenses named a break](https://liquilens.in/articles/2026-08-29-il-fs-replay-the-funding-signal-arrived-before-the-threshold-lenses-named-a.md): 2026-08-29, historical replay. IL&FS’s disclosed funding lens reached watch well before default, while the public action-zone replay recorded no first entry. That sequence is a historical prompt for diligence, not proof of foresight or a forecast.
+- [Global Trust Bank’s warning appeared before the event—but its limits matter as much as its lead](https://liquilens.in/articles/2026-08-28-global-trust-bank-s-warning-appeared-before-the-event-but-its-limits-matter.md): 2026-08-28, historical replay. The replay shows reported capital and asset-quality breaches before Global Trust Bank’s default, while an unscoreable funding lens and a fraud-masked record make the case for escalation, not prediction.
+- [Altico’s replay points to rollover funding before an action-zone signal](https://liquilens.in/articles/2026-08-27-altico-s-replay-points-to-rollover-funding-before-an-action-zone-signal.md): 2026-08-27, historical replay. Altico’s disclosed commercial-paper reliance was a liability-side vulnerability in the historical record. The finding is a filing-period signal, not a market-price call or a model-derived failure forecast.
+- [Abhyudaya’s earliest disclosed warning was an asset-quality tripwire](https://liquilens.in/articles/2026-08-26-abhyudaya-s-earliest-disclosed-warning-was-an-asset-quality-tripwire.md): 2026-08-26, historical replay. This historical replay finds that Abhyudaya Co-operative Bank entered an RBI action zone on NNPA in FY2021, well before its event date. It is a disclosure-timed signal, not a forecast, a market-price verdict, or a calibrated probability of failure.
+- [Sambandh Finserve’s funding flag arrived early—but did not make failure knowable](https://liquilens.in/articles/2026-08-25-sambandh-finserve-s-funding-flag-arrived-early-but-did-not-make-failure-know.md): 2026-08-25, historical replay. A fragile wholesale-leverage reading preceded Sambandh Finserve’s recorded default. It was a filing-period vulnerability signal, not a market-price verdict, calibrated failure probability, or forecast for institutions on today’s board.
+- [Before the event: what New India Co-operative Bank's filings did and did not reveal](https://liquilens.in/articles/2026-08-24-before-the-event-what-new-india-co-operative-bank-s-filings-did-and-did-not.md): 2026-08-24, historical replay. A construction-PIT replay of New India Co-operative Bank: the first published regulatory or funding signal, the disclosure clock, the miss, and the boundary that survives into today's screen.
+- [Nedungadi Bank’s capital breach preceded the event. The harder question is what that warning could—and could not—establish.](https://liquilens.in/articles/2026-08-23-nedungadi-bank-s-capital-breach-preceded-the-event-the-harder-question-is-wh.md): 2026-08-23, historical replay. The replay records an RBI action-zone CRAR breach for Nedungadi Bank at FY1999, before its default. It is evidence of an early disclosed constraint under a proxy clock, not proof of a tradable forecast or a complete account of the institution’s failure.
+- [United Western Bank’s earliest recorded warning was a filing signal, not a market call](https://liquilens.in/articles/2026-08-22-united-western-bank-s-earliest-recorded-warning-was-a-filing-signal-not-a-ma.md): 2026-08-22, historical replay. The historical replay records an NNPA action-zone breach before United Western Bank’s default. That is evidence of a disclosed rule breach at a filing period, not proof of causation, a contemporaneous market-price warning, or a calibrated forecast.
+- [Utkarsh is the orange balance-sheet watch, but the evidence is aging](https://liquilens.in/articles/2026-08-21-utkarsh-is-the-orange-balance-sheet-watch-but-the-evidence-is-aging.md): 2026-08-21, current analysis. Utkarsh Small Finance Bank is the sole orange name on the current LiquiLens Failure Radar. That status rests on an old filing-period asset-quality signal, not on a market verdict, a funding event, or a prediction of failure.
+- [ESAF’s stress signal is not funding flight. It is a narrowing margin for error.](https://liquilens.in/articles/2026-08-20-esaf-s-stress-signal-is-not-funding-flight-it-is-a-narrowing-margin-for-erro.md): 2026-08-20, current analysis. ESAF Small Finance Bank is a yellow-screen priority because an asset-quality burden and a stale market repricing signal can interact before a visible funding break. The available deposit signal is stable, while key liquidity evidence remains dark.
+- [ESAF is the clearest observable pressure chain, not a settled first-to-stress call](https://liquilens.in/articles/2026-08-19-esaf-is-the-clearest-observable-pressure-chain-not-a-settled-first-to-stress.md): 2026-08-19, current analysis. An aged filing shows a high bad-loan burden and a stale market model reads below the yellow threshold. But deposits were rising in the reported quarter, key funding fields are dark, and an orange peer prevents any confident claim that ESAF will feel stress first.
+- [Religare Finvest replay: a funding watch came before default, but fraud limits what it can prove](https://liquilens.in/articles/2026-08-18-religare-finvest-replay-a-funding-watch-came-before-default-but-fraud-limits.md): 2026-08-18, historical replay. The historical record places a disclosed-liability warning ahead of Religare Finvest’s default. It does not show that a threshold screen detected fraud, established causation, or supplied a tradeable forecast.
+- [IL&FS replay: the funding signal arrived first, but the record cannot prove causation](https://liquilens.in/articles/2026-08-17-il-fs-replay-the-funding-signal-arrived-first-but-the-record-cannot-prove-ca.md): 2026-08-17, historical replay. The IL&FS replay identifies a liability-side watch signal before default and before any recorded PCA action-zone entry. That is a filing-period result under optimistic timing assumptions, not a market-price verdict, a live backtest, or a forecast for today’s screens.
+- [Global Trust Bank replay: disclosed capital and asset-quality stress arrived first](https://liquilens.in/articles/2026-08-16-global-trust-bank-replay-disclosed-capital-and-asset-quality-stress-arrived.md): 2026-08-16, historical replay. The replay places Global Trust Bank in an RBI action zone before its default date, but fraud-masking, an unscoreable funding lens, and period-end timing proxies sharply limit what that sequence can prove.
+- [ESAF’s warning is a dated filing signal meeting a live market-price signal—not evidence of a funding run](https://liquilens.in/articles/2026-08-15-esaf-s-warning-is-a-dated-filing-signal-meeting-a-live-market-price-signal-n.md): 2026-08-15, current analysis. ESAF Small Finance Bank is a yellow-tier monitoring case because an elevated GNPA reading sits beside a market distance-to-default below the screen threshold. The filing, price and model signals should not be treated as the same thing.
+<!-- DAILY-ARTICLES:END -->
+
+
+## Free NPA, small finance bank and urban cooperative bank research
+
+Guide and browser review: https://liquilens.in/banking/
+MCP: https://api.liquilens.in/mcp (free public research; no key or payment, rate limits apply).
+Coverage: https://api.liquilens.in/api/experimental/v1/banking/coverage
+Example: https://api.liquilens.in/api/experimental/v1/banking/institutions/cosmos-ucb?include_history=true
+
+Use banking_specialisation_coverage for exact slugs and observed, stale or historical evidence states. bank_asset_quality_review returns cited GNPA/NNPA, capital, distinct PCR definitions, comparable-period changes and disclosed NPA movements. bank_npa_reconciliation checks a complete caller-supplied movement in one explicit INR unit; write-offs and sales are not cash recoveries. bank_asset_quality_brief is the guided prompt.
+
+The selected FY2026 supplements for AU, Cosmos and Slice are review-only, outside model fitting. No universal bank coverage, new score, credit approval or deposit-safety guarantee is implied. Current UCB regulatory scope requires dated tier and supervisory evidence. Latest accepted does not guarantee latest available. Private tenant records and operational controls remain outside public access. For system money-market context use https://seiche.info/use-cases/money-market-research/.
+
+## First research result
+
+- [Browser research examples](https://liquilens.in/start/): User-triggered bank NPA review, dollar-funding brief and BTC exit-cost estimates, with exact source responses and client setup for nine hosted MCPs.
+- [Bank and credit example](https://liquilens.in/start/?task=bank)
+- [Agent and macro example](https://liquilens.in/start/?task=funding)
+- [Crypto market example](https://liquilens.in/start/?task=exit)
+- The browser performs no research calls until the visitor asks. Returned evidence, copied setup and helpful-button clicks are different measurements; none establishes a verified user or execution authority.
+
+Crypto workbench: https://liquilens-undertow.com/crypto/ provides published BTC sell-rung comparisons plus caller-supplied funding and portfolio scenarios. Its crypto_exit_check, crypto_funding_cost and crypto_portfolio_stress tools are public in hosted MCP 1.13.0. Three agent skills and a standard-library Python brief are packaged at https://liquilens-undertow.com/crypto/undertow-crypto-kit.zip; exact file digests are in https://liquilens-undertow.com/crypto/kit-manifest.json. The brief preserves independent Undertow, Seiche and optional LiquiLens evidence states.
+
+## Citable accepted bank filings
+
+- [Bank filing evidence](https://liquilens.in/banking/institutions/): dated HTML snapshots of accepted disclosures, source clocks, definitions, missing values and source-document hashes; not live bank-health assessments.
+- [Snapshot catalog](https://liquilens.in/banking/institutions/manifest.json): institution IDs, reporting periods and capture time. Each HTML record links matching evidence.json and the live API. Original reports remain at their publishers; no new rights to redistribute those reports are granted.
+
+## Quant agent integrations
+
+Native LangChain/LangGraph, CrewAI, OpenAI Agents and Pydantic AI research tools; compact source-cited tables and repeat-call revisions. Setup: https://liquilens.in/agents/quant/
+Current published history is not an as-published vintage archive. Integration recipes do not imply external institutional adoption.
+
+## Financial evidence infrastructure
+
+Setup and interface selection: https://liquilens.in/agents/infrastructure/
+Machine-readable scopes: https://beepboop2025.github.io/financial-evidence-skills/agents/system.json
+NoiseFloor 0.3.1 adds eight descriptive tools for caller-supplied market series, headline repetition, measurement coverage and statistical evidence. MCP: https://api.seiche.info/noisefloor/mcp · OpenAPI: https://api.seiche.info/noisefloor/openapi.json
+NoiseFloor collects no feeds and grants no trading authority. Client integration, market utility and predictive performance require separate validation; publication does not establish integration across every family product.
+Financial Evidence 0.1.7 exposes the public three-tool router. The hosted Research Desk remains independently versioned at 1.1.3 with eight MCP tools and REST/OpenAPI. The six-tool local Runtime contract 1.0.0 uses package 0.1.7; Runtime Operations 1.0.3 adds private monitoring, stable backup schedules and verified encrypted restore. The private paper host has authenticated REST and stdio MCP, remains disabled by default and requires current eligible evidence. Its setup and capability catalog describe the exact qualification limits. Public research endpoints do not submit orders.
+
+## Connected upgrades and institution monitoring
+
+- [Institution evidence monitor](https://liquilens.in/banking/monitoring/): Source-dated review queue across tracked institutions, including missing and overdue evidence; no scoring, credit or trading authority.
+- [Monitoring source register](https://api.liquilens.in/api/experimental/v1/banking/monitoring/watchlist): Same evidence contract as MCP tool `institution_evidence_monitor`. Counts are source responses, not a census or safety verdict.
+- [Connected product upgrades](https://liquilens.in/updates/): Monitoring, recurring research, NoiseFloor and paper rehearsal with separate evidence boundaries.
+- [Capability record](https://liquilens.in/updates/capabilities.json): Dated, source-linked capability and authority manifest.

@@ -1,34 +1,287 @@
 aid: liquilens
 name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs
-description: 'LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs is a company surfaced via
-  the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline
-  profiling.'
+image: https://liquilens.in/share.png?v=b4962f8b5a592bb2
+description: LiquiLens Private Limited provides a financial research API platform that aggregates bank evidence, funding data, market liquidity,
+  and source availability across multiple datasets. The service offers public read access without API keys, delivering up to five rows per example
+  query for quick inspection. It integrates with tools like Postman, Bruno, and Insomnia, and supports data export via OpenAPI 3.1. Updated October
+  2026, LiquiLens aims to facilitate transparent financial data research and analysis.
 url: https://raw.githubusercontent.com/api-evangelist/liquilens/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:new-submission
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-08 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-10-08'
 modified: '2026-10-08'
 tags:
 - Company
-apis: []
+- Finance
+- Research
+- API
+- Data
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/liquilens-llms.txt
+- type: SecurityTxt
+  url: well-known/liquilens-security.txt
+- type: AgenticAccess
+  url: agentic-access/liquilens-agentic-access.yml
+- type: Spectral
+  url: rules/liquilens-rules.yml
+- type: JSONLD
+  url: json-ld/liquilens-context.jsonld
+- type: Vocabulary
+  url: vocabulary/liquilens-vocabulary.yml
+- type: DataModel
+  url: data-model/liquilens-data-model.yml
+- type: ErrorCatalog
+  url: errors/liquilens-problem-types.yml
+- type: Conformance
+  url: conformance/liquilens-conformance.yml
+- type: SecurityTxt
+  url: well-known/liquilens-liquilens-security.txt
+- type: WellKnown
+  url: well-known/liquilens-well-known.yml
+- type: Hosts
+  url: hosts/liquilens-hosts.yml
+- type: Vendors
+  url: vendors/liquilens-vendors.yml
+- type: SDKs
+  url: packages/liquilens-packages.yml
+- type: Packages
+  url: packages/liquilens-packages.yml
+- type: TermsOfService
+  url: https://liquilens.in/terms/
+- type: StatusPage
+  url: https://status.liquilens.in/
+- type: Security
+  url: https://liquilens.in/security/
+- type: PrivacyPolicy
+  url: https://liquilens.in/privacy/
+- type: Newsroom
+  url: https://api.liquilens.in/api/public-signals/news
+- type: APIReference
+  url: https://liquilens.in/developers/
+- type: VulnerabilityDisclosure
+  url: security/liquilens-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/liquilens-domain-security.yml
 - type: Website
   url: https://liquilens.in/
 - type: Documentation
   url: https://beepboop2025.github.io/financial-evidence-skills/api/
-x-submission-notes: Duplicate notice 3304 (same content, ledger id not found for it). Docs/OpenAPI live
-  on a personal github.io (beepboop2025), API on sibling product domain seiche.info (Seiche, Undertow
-  are their products). No apis.json/openapi on liquilens.in.
-x-submission-probe: liquilens.in 200 (GitHub Pages; soft-404 clean 404); OpenAPI 3.1 on github.io (14
-  paths, server api.seiche.info/openbb); api.seiche.info/openbb/healthz + /api/v1/sources 200 JSON, invented
-  path 404; MCP initialize OK at api.seiche.info/openbb/mcp ('Financial Evidence Workspace' 1.1.3) and
-  liquilens.in/mcp/financial-evidence ('financial-evidence' 0.1.7)
+apis:
+- aid: liquilens:liquilens-agent-query-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Agent Query API
+  description: >-
+    The Agent Query API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for agent query.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Agent Query
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-agent-query-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-agent-review-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Agent Review API
+  description: >-
+    The Agent Review API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for agent review.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Agent Review
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-agent-review-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-applications-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Applications API
+  description: >-
+    The Applications API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 2 operation(s)
+    for applications.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Applications
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-applications-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-datasets-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Datasets API
+  description: >-
+    The Datasets API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for datasets.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Datasets
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-datasets-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-financial-evidence-for-openbb-api
+  name: >-
+    LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Financial Evidence For OpenBB API
+  description: >-
+    The Financial Evidence For OpenBB API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research
+    APIs — 1 operation(s) for financial evidence for openbb.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Financial Evidence For OpenBB
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-financial-evidence-for-openbb-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-funding-review-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Funding Review API
+  description: >-
+    The Funding Review API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for funding review.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Funding Review
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-funding-review-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-funding-review-csv-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Funding Review.csv API
+  description: >-
+    The Funding Review.csv API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1
+    operation(s) for funding review.csv.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Funding Review.csv
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-funding-review-csv-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-guide-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Guide API
+  description: >-
+    The Guide API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for guide.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Guide
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-guide-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-healthz-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Healthz API
+  description: >-
+    The Healthz API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for healthz.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Healthz
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-healthz-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-packet-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Packet API
+  description: >-
+    The Packet API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for packet.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Packet
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-packet-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-query-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Query API
+  description: >-
+    The Query API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for query.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Query
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-query-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-release-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Release API
+  description: >-
+    The Release API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for release.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Release
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-release-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+- aid: liquilens:liquilens-sources-api
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Sources API
+  description: >-
+    The Sources API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s)
+    for sources.
+  humanURL: https://beepboop2025.github.io/financial-evidence-skills/api/
+  baseURL: https://api.seiche.info/openbb
+  tags:
+  - Sources
+  properties:
+  - type: OpenAPI
+    url: openapi/liquilens-sources-api-openapi.yml
+  - type: JSONSchema
+    url: json-schema/liquilens-query-result-schema.json
+x-submission-notes: Duplicate notice 3304 (same content, ledger id not found for it). Docs/OpenAPI live on a personal github.io (beepboop2025),
+  API on sibling product domain seiche.info (Seiche, Undertow are their products). No apis.json/openapi on liquilens.in.
+x-submission-probe: liquilens.in 200 (GitHub Pages; soft-404 clean 404); OpenAPI 3.1 on github.io (14 paths, server api.seiche.info/openbb); api.seiche.info/openbb/healthz
+  + /api/v1/sources 200 JSON, invented path 404; MCP initialize OK at api.seiche.info/openbb/mcp ('Financial Evidence Workspace' 1.1.3) and liquilens.in/mcp/financial-evidence
+  ('financial-evidence' 0.1.7)
 x-submitted-by: mrinal@liquilens.in (apis.io/add, 2026-10-07T08:04:12.373Z)
+x-coverage:
+  state: unreadable
+  reason: no-machine-readable-spec
+  method: derived
+  generated: '2026-10-08'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: the company publishes developer documentation but serves no machine-readable contract from it
+  evidence:
+  - url: https://api.liquilens.in/mcp
+    status: null
+  - url: https://demo.liquilens.in/mcp
+    status: 401
+  - url: https://liquilens.in/
+    status: 200
+x-enrichment:
+  date: '2026-10-08'
+  status: enriched
+  artifacts_added: 18
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

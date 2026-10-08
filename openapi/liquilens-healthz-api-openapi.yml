@@ -1,0 +1,25 @@
+openapi: 3.2.0
+info:
+  title: Financial Evidence for OpenBB Healthz API
+  description: Seven source-cited datasets, Workspace widgets and read-only MCP. No API key required.
+  version: 1.1.3
+servers:
+- url: /openbb
+tags:
+- name: Healthz
+paths:
+  /healthz:
+    get:
+      summary: Health
+      operationId: health_healthz_get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties: true
+                type: object
+                title: Response Health Healthz Get
+      tags:
+      - Healthz

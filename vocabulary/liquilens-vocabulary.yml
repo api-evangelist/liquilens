@@ -1,0 +1,30 @@
+generated: '2026-10-08'
+method: derived
+generator: derive-vocabulary.py
+source: openapi/liquilens-openapi.json
+vocabulary:
+  name: LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Domain Vocabulary
+  description: 'Terms declared by LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs''s own API contract: its resource groups, objects
+    and enumerations, with the contract''s definitions. Derived, not authored.'
+  version: '2026-10-08'
+  terms:
+  - term: EvidenceRow
+    definition: One observation or explicit coverage row; numeric absence stays null.
+    tags:
+    - Object
+    source: openapi/liquilens-openapi.json#/components/schemas/EvidenceRow
+  - term: HTTPValidationError
+    definition: 'Object declared by the contract with fields: detail.'
+    tags:
+    - Object
+    source: openapi/liquilens-openapi.json#/components/schemas/HTTPValidationError
+  - term: QueryResult
+    definition: Rows plus pagination and source diagnostics, including filtered failures.
+    tags:
+    - Object
+    source: openapi/liquilens-openapi.json#/components/schemas/QueryResult
+  - term: ValidationError
+    definition: 'Object declared by the contract with fields: loc, msg, type, input, ctx.'
+    tags:
+    - Object
+    source: openapi/liquilens-openapi.json#/components/schemas/ValidationError

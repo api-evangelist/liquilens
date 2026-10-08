@@ -1,0 +1,25 @@
+openapi: 3.2.0
+info:
+  title: Financial Evidence For OpenBB API
+  description: Seven source-cited datasets, Workspace widgets and read-only MCP. No API key required.
+  version: 1.1.3
+servers:
+- url: /openbb
+tags:
+- name: Financial Evidence For OpenBB
+paths:
+  /:
+    get:
+      summary: Index
+      operationId: index__get
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                additionalProperties: true
+                type: object
+                title: Response Index  Get
+      tags:
+      - Financial Evidence For OpenBB

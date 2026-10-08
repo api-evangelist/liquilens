@@ -1,0 +1,163 @@
+{
+  "@context": {
+    "@vocab": "https://github.io/schema#",
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "liquilens": "https://github.io/schema#",
+    "EvidenceRow": "liquilens:EvidenceRow",
+    "dataset": {
+      "@id": "liquilens:dataset",
+      "@type": "xsd:string"
+    },
+    "product": {
+      "@id": "liquilens:product",
+      "@type": "xsd:string"
+    },
+    "entity_id": {
+      "@id": "liquilens:entity_id"
+    },
+    "entity_name": {
+      "@id": "liquilens:entity_name"
+    },
+    "metric": {
+      "@id": "liquilens:metric"
+    },
+    "value": {
+      "@id": "liquilens:value"
+    },
+    "unit": {
+      "@id": "liquilens:unit"
+    },
+    "as_of": {
+      "@id": "liquilens:as_of"
+    },
+    "source_status": {
+      "@id": "liquilens:source_status"
+    },
+    "availability": {
+      "@id": "liquilens:availability",
+      "@type": "xsd:string"
+    },
+    "source_url": {
+      "@id": "liquilens:source_url",
+      "@type": "xsd:string"
+    },
+    "source_field": {
+      "@id": "liquilens:source_field",
+      "@type": "xsd:string"
+    },
+    "observation_url": {
+      "@id": "liquilens:observation_url"
+    },
+    "retrieved_at": {
+      "@id": "liquilens:retrieved_at"
+    },
+    "content_sha256": {
+      "@id": "liquilens:content_sha256"
+    },
+    "published_at": {
+      "@id": "liquilens:published_at"
+    },
+    "knowledge_time": {
+      "@id": "liquilens:knowledge_time"
+    },
+    "rights_status": {
+      "@id": "liquilens:rights_status"
+    },
+    "context": {
+      "@id": "liquilens:context"
+    },
+    "transport_status": {
+      "@id": "liquilens:transport_status",
+      "@type": "xsd:string"
+    },
+    "evidence_status": {
+      "@id": "liquilens:evidence_status",
+      "@type": "xsd:string"
+    },
+    "financial_authority": {
+      "@id": "liquilens:financial_authority",
+      "@type": "xsd:string"
+    },
+    "carrier_verification": {
+      "@id": "liquilens:carrier_verification",
+      "@type": "xsd:string"
+    },
+    "HTTPValidationError": "liquilens:HTTPValidationError",
+    "detail": {
+      "@id": "liquilens:detail",
+      "@container": "@list"
+    },
+    "QueryResult": "liquilens:QueryResult",
+    "description": {
+      "@id": "liquilens:description",
+      "@type": "xsd:string"
+    },
+    "results": {
+      "@id": "liquilens:results",
+      "@container": "@list"
+    },
+    "total_rows": {
+      "@id": "liquilens:total_rows",
+      "@type": "xsd:integer"
+    },
+    "returned_rows": {
+      "@id": "liquilens:returned_rows",
+      "@type": "xsd:integer"
+    },
+    "offset": {
+      "@id": "liquilens:offset",
+      "@type": "xsd:integer"
+    },
+    "limit": {
+      "@id": "liquilens:limit",
+      "@type": "xsd:integer"
+    },
+    "next_offset": {
+      "@id": "liquilens:next_offset"
+    },
+    "status_semantics": {
+      "@id": "liquilens:status_semantics",
+      "@type": "xsd:string"
+    },
+    "absence_policy": {
+      "@id": "liquilens:absence_policy",
+      "@type": "xsd:string"
+    },
+    "diagnostics": {
+      "@id": "liquilens:diagnostics",
+      "@container": "@list"
+    },
+    "sources": {
+      "@id": "liquilens:sources",
+      "@container": "@list"
+    },
+    "ValidationError": "liquilens:ValidationError",
+    "loc": {
+      "@id": "liquilens:loc",
+      "@container": "@list"
+    },
+    "msg": {
+      "@id": "liquilens:msg",
+      "@type": "xsd:string"
+    },
+    "type": {
+      "@id": "liquilens:type",
+      "@type": "xsd:string"
+    },
+    "input": {
+      "@id": "liquilens:input"
+    },
+    "ctx": {
+      "@id": "liquilens:ctx"
+    }
+  },
+  "@type": "schema:Dataset",
+  "schema:name": "LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs API JSON-LD context",
+  "schema:description": "A JSON-LD @context for the objects LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs's own API contract declares: one class per component schema, one property per declared field, typed from the contract. Derived by script (derive-json-ld.py, 2026-10-08) from openapi/liquilens-openapi.json.",
+  "dcterms:created": "2026-10-08",
+  "dcterms:source": [
+    "openapi/liquilens-openapi.json"
+  ]
+}

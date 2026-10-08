@@ -1,0 +1,109 @@
+generated: '2026-10-08'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 7
+  own: 5
+  other_domain: 1
+  platform: 1
+  roles:
+  - api
+  - docs
+  - other
+  - status
+  - website
+hosts:
+- host: api.liquilens.in
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - spec-found
+  - contract-discovery
+  - well-known
+  types:
+  - Newsroom
+  serves:
+  - spec
+  registrable_domain: liquilens.in
+  role: api
+  relation: own
+- host: api.seiche.info
+  found_by:
+  - apis[]
+  - spec-found
+  types: []
+  serves:
+  - api
+  - spec
+  registrable_domain: seiche.info
+  role: api
+  relation: other-domain
+- host: beepboop2025.github.io
+  found_by:
+  - pointer
+  - apis[]
+  - vendor-detect
+  types:
+  - Documentation
+  serves:
+  - docs
+  - cdn
+  - hosting
+  vendor: fastly
+  registrable_domain: github.io
+  role: docs
+  relation: platform
+- host: demo.liquilens.in
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: liquilens.in
+  role: other
+  relation: own
+- host: liquilens.in
+  found_by:
+  - pointer
+  - probed
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - Security
+  - PrivacyPolicy
+  - APIReference
+  - Website
+  serves:
+  - docs
+  platform: github.com
+  registrable_domain: liquilens.in
+  role: website
+  relation: own
+- host: status.liquilens.in
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - StatusPage
+  serves: []
+  registrable_domain: liquilens.in
+  role: status
+  relation: own
+- host: trade-safety.liquilens.in
+  found_by:
+  - spec-found
+  types: []
+  serves:
+  - spec
+  registrable_domain: liquilens.in
+  role: other
+  relation: own

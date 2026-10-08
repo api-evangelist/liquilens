@@ -1,0 +1,58 @@
+{
+  "provider": "liquilens",
+  "sources": [
+    "liquilens-openapi.json"
+  ],
+  "outputs": [
+    "liquilens-agent-query-api-openapi.yml",
+    "liquilens-agent-review-api-openapi.yml",
+    "liquilens-applications-api-openapi.yml",
+    "liquilens-datasets-api-openapi.yml",
+    "liquilens-financial-evidence-for-openbb-api-openapi.yml",
+    "liquilens-funding-review-api-openapi.yml",
+    "liquilens-funding-review-csv-api-openapi.yml",
+    "liquilens-guide-api-openapi.yml",
+    "liquilens-healthz-api-openapi.yml",
+    "liquilens-packet-api-openapi.yml",
+    "liquilens-query-api-openapi.yml",
+    "liquilens-release-api-openapi.yml",
+    "liquilens-sources-api-openapi.yml"
+  ],
+  "archived": [
+    "archived openapi/liquilens-openapi.json"
+  ],
+  "errors": [],
+  "warnings": [],
+  "notes": [
+    "liquilens-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
+    "liquilens-openapi.json: tagged paths POST /api/v1/applications -> Applications",
+    "liquilens-openapi.json: tagged paths DELETE /api/v1/applications/current -> Applications",
+    "liquilens-openapi.json: tagged paths GET / -> Financial Evidence For OpenBB",
+    "liquilens-openapi.json: tagged paths GET /healthz -> Healthz",
+    "liquilens-openapi.json: tagged paths GET /api/v1/release -> Release",
+    "liquilens-openapi.json: tagged paths GET /api/v1/funding-review -> Funding Review",
+    "liquilens-openapi.json: tagged paths GET /api/v1/funding-review.csv -> Funding Review.csv",
+    "liquilens-openapi.json: tagged paths GET /guide -> Guide",
+    "liquilens-openapi.json: tagged paths GET /api/v1/datasets -> Datasets",
+    "liquilens-openapi.json: tagged paths GET /api/v1/query -> Query",
+    "liquilens-openapi.json: tagged paths GET /api/v1/sources -> Sources",
+    "liquilens-openapi.json: tagged paths GET /api/v1/packet -> Packet",
+    "liquilens-openapi.json: tagged paths GET /api/v1/agent-query -> Agent Query",
+    "liquilens-openapi.json: tagged paths GET /api/v1/agent-review -> Agent Review",
+    "liquilens-openapi.json: declared missing tag: Agent Query",
+    "liquilens-openapi.json: declared missing tag: Agent Review",
+    "liquilens-openapi.json: declared missing tag: Applications",
+    "liquilens-openapi.json: declared missing tag: Datasets",
+    "liquilens-openapi.json: declared missing tag: Financial Evidence For OpenBB",
+    "liquilens-openapi.json: declared missing tag: Funding Review",
+    "liquilens-openapi.json: declared missing tag: Funding Review.csv",
+    "liquilens-openapi.json: declared missing tag: Guide",
+    "liquilens-openapi.json: declared missing tag: Healthz",
+    "liquilens-openapi.json: declared missing tag: Packet",
+    "liquilens-openapi.json: declared missing tag: Query",
+    "liquilens-openapi.json: declared missing tag: Release",
+    "liquilens-openapi.json: declared missing tag: Sources",
+    "apis.yml register: written (+13 apis, 13 total)"
+  ],
+  "skipped": []
+}
