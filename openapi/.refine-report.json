@@ -1,7 +1,7 @@
 {
   "provider": "liquilens",
   "sources": [
-    "liquilens-openapi.json"
+    "_original/liquilens-openapi.json"
   ],
   "outputs": [
     "liquilens-agent-query-api-openapi.yml",
@@ -18,12 +18,11 @@
     "liquilens-release-api-openapi.yml",
     "liquilens-sources-api-openapi.yml"
   ],
-  "archived": [
-    "archived openapi/liquilens-openapi.json"
-  ],
+  "archived": [],
   "errors": [],
   "warnings": [],
   "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
     "liquilens-openapi.json: upgraded openapi 3.1.0 -> OpenAPI 3.2.0",
     "liquilens-openapi.json: tagged paths POST /api/v1/applications -> Applications",
     "liquilens-openapi.json: tagged paths DELETE /api/v1/applications/current -> Applications",
@@ -52,7 +51,21 @@
     "liquilens-openapi.json: declared missing tag: Query",
     "liquilens-openapi.json: declared missing tag: Release",
     "liquilens-openapi.json: declared missing tag: Sources",
-    "apis.yml register: written (+13 apis, 13 total)"
+    "apis.yml register: already-registered"
   ],
-  "skipped": []
+  "skipped": [
+    "liquilens-agent-query-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-agent-review-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-applications-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-datasets-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-financial-evidence-for-openbb-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-funding-review-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-funding-review-csv-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-guide-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-healthz-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-packet-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-query-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-release-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "liquilens-sources-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }

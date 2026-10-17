@@ -24,6 +24,85 @@ paths:
       - Sources
 components:
   schemas:
+    QueryResult:
+      properties:
+        schema:
+          type: string
+          title: Schema
+        dataset:
+          type: string
+          title: Dataset
+        description:
+          type: string
+          title: Description
+        results:
+          items:
+            $ref: '#/components/schemas/EvidenceRow'
+          type: array
+          title: Results
+        total_rows:
+          type: integer
+          title: Total Rows
+        returned_rows:
+          type: integer
+          title: Returned Rows
+        offset:
+          type: integer
+          title: Offset
+        limit:
+          type: integer
+          title: Limit
+        next_offset:
+          anyOf:
+          - type: integer
+          - type: 'null'
+          title: Next Offset
+        transport_status:
+          type: string
+          title: Transport Status
+        status_semantics:
+          type: string
+          title: Status Semantics
+        evidence_status:
+          type: string
+          title: Evidence Status
+        carrier_verification:
+          type: string
+          title: Carrier Verification
+        absence_policy:
+          type: string
+          title: Absence Policy
+        diagnostics:
+          items:
+            $ref: '#/components/schemas/EvidenceRow'
+          type: array
+          title: Diagnostics
+        sources:
+          items:
+            additionalProperties: true
+            type: object
+          type: array
+          title: Sources
+      type: object
+      required:
+      - schema
+      - dataset
+      - description
+      - results
+      - total_rows
+      - returned_rows
+      - offset
+      - limit
+      - next_offset
+      - transport_status
+      - status_semantics
+      - evidence_status
+      - carrier_verification
+      - absence_policy
+      - diagnostics
+      - sources
+      title: QueryResult
+      description: Rows plus pagination and source diagnostics, including filtered failures.
     EvidenceRow:
       properties:
         dataset:
@@ -143,82 +222,3 @@ components:
       - carrier_verification
       title: EvidenceRow
       description: One observation or explicit coverage row; numeric absence stays null.
-    QueryResult:
-      properties:
-        schema:
-          type: string
-          title: Schema
-        dataset:
-          type: string
-          title: Dataset
-        description:
-          type: string
-          title: Description
-        results:
-          items:
-            $ref: '#/components/schemas/EvidenceRow'
-          type: array
-          title: Results
-        total_rows:
-          type: integer
-          title: Total Rows
-        returned_rows:
-          type: integer
-          title: Returned Rows
-        offset:
-          type: integer
-          title: Offset
-        limit:
-          type: integer
-          title: Limit
-        next_offset:
-          anyOf:
-          - type: integer
-          - type: 'null'
-          title: Next Offset
-        transport_status:
-          type: string
-          title: Transport Status
-        status_semantics:
-          type: string
-          title: Status Semantics
-        evidence_status:
-          type: string
-          title: Evidence Status
-        carrier_verification:
-          type: string
-          title: Carrier Verification
-        absence_policy:
-          type: string
-          title: Absence Policy
-        diagnostics:
-          items:
-            $ref: '#/components/schemas/EvidenceRow'
-          type: array
-          title: Diagnostics
-        sources:
-          items:
-            additionalProperties: true
-            type: object
-          type: array
-          title: Sources
-      type: object
-      required:
-      - schema
-      - dataset
-      - description
-      - results
-      - total_rows
-      - returned_rows
-      - offset
-      - limit
-      - next_offset
-      - transport_status
-      - status_semantics
-      - evidence_status
-      - carrier_verification
-      - absence_policy
-      - diagnostics
-      - sources
-      title: QueryResult
-      description: Rows plus pagination and source diagnostics, including filtered failures.
