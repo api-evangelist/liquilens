@@ -64,5 +64,132 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://liquilens.in/
+LiquiLens Private Limited provides a financial research API platform that aggregates bank evidence, funding data, market liquidity, and source availability across multiple datasets. The service offers public read access without API keys, delivering up to five rows per example query for quick inspection. It integrates with tools like Postman, Bruno, and Insomnia, and supports data export via OpenAPI 3.1. Updated October 2026, LiquiLens aims to facilitate transparent financial data research and analysis.
+
+**Areas:** Company · Finance · Research · Data
+
+## LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs on APIs.io
+
+Everything profiled for LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/liquilens/](https://apis.io/providers/liquilens/)** — or go straight to one of the APIs or properties below.
+
+### APIs (13)
+
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Agent Query API](https://apis.io/apis/liquilens/liquilens-agent-query-api/) — The Agent Query API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for agent query.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Agent Review API](https://apis.io/apis/liquilens/liquilens-agent-review-api/) — The Agent Review API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for agent review.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Applications API](https://apis.io/apis/liquilens/liquilens-applications-api/) — The Applications API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 2 operation(s) for applications.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Datasets API](https://apis.io/apis/liquilens/liquilens-datasets-api/) — The Datasets API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for datasets.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Financial Evidence For OpenBB API](https://apis.io/apis/liquilens/liquilens-financial-evidence-for-openbb-api/) — The Financial Evidence For OpenBB API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for financial evidence for openbb.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Funding Review API](https://apis.io/apis/liquilens/liquilens-funding-review-api/) — The Funding Review API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for funding review.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Funding Review.csv API](https://apis.io/apis/liquilens/liquilens-funding-review-csv-api/) — The Funding Review.csv API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for funding review.csv.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Guide API](https://apis.io/apis/liquilens/liquilens-guide-api/) — The Guide API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for guide.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Healthz API](https://apis.io/apis/liquilens/liquilens-healthz-api/) — The Healthz API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for healthz.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Packet API](https://apis.io/apis/liquilens/liquilens-packet-api/) — The Packet API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for packet.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Query API](https://apis.io/apis/liquilens/liquilens-query-api/) — The Query API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for query.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Release API](https://apis.io/apis/liquilens/liquilens-release-api/) — The Release API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for release.
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs Sources API](https://apis.io/apis/liquilens/liquilens-sources-api/) — The Sources API from LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs — 1 operation(s) for sources.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Liquilens Agentic Access](https://apis.io/agentic-access/liquilens/liquilens-agentic-access/)
+
+#### JSON Schema (1)
+
+The data models the API reads and writes.
+
+- [QueryResult](https://apis.io/schemas/liquilens/liquilens-query-result/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Liquilens Context](https://apis.io/jsonld/liquilens/liquilens-context/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Liquilens Openapi Overlay](https://apis.io/overlays/liquilens/liquilens-openapi-overlay/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs API Rules](https://apis.io/rules/liquilens/liquilens-rules/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Liquilens Domain Security](https://apis.io/security/liquilens/liquilens-domain-security/)
+- [Liquilens Vulnerability Disclosure](https://apis.io/security/liquilens/liquilens-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://liquilens.in/)
+- [Documentation](https://beepboop2025.github.io/financial-evidence-skills/api/)
+- [API reference](https://liquilens.in/developers/)
+- [Security](https://liquilens.in/security/)
+- [Terms of service](https://liquilens.in/terms/)
+- [Privacy policy](https://liquilens.in/privacy/)
+- [Status](https://status.liquilens.in/)
+
+## API Evangelist rating
+
+**Kin Score 34.3** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 47.9 |
+| Contract governance | 22.0 |
+| Operational transparency | 26.3 |
+| Developer ergonomics | 23.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 18.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | yes |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 24.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/liquilens/](https://apis.io/providers/liquilens/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for LIQUILENS PRIVATE LIMITED -- LiquiLens financial research APIs: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/liquilens/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
